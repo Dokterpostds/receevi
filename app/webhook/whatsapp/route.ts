@@ -1,11 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { headers } from 'next/headers';
 import { verifyWebhook } from '@/lib/verify';
-import { WebHookRequest } from '../../types/webhook';
+import { WebHookRequest } from '@/types/webhook';
 import { createServiceClient } from '@/lib/supabase/service-client';
 import { DBTables } from '@/lib/enums/Tables';
-import { downloadMedia } from './whatsapp/media';
-import { updateBroadCastReplyStatus, updateBroadCastStatus } from './whatsapp/bulk-send-events';
+import { downloadMedia } from './media';
+import { updateBroadCastReplyStatus, updateBroadCastStatus } from './bulk-send-events';
 
 export const revalidate = 0
 
