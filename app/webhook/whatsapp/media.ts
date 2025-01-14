@@ -1,8 +1,8 @@
 import { DBTables } from "@/lib/enums/Tables";
 import { httpsGet } from "@/lib/httpsGet";
 import { createServiceClient } from "@/lib/supabase/service-client";
-import { MediaResponse } from "../../types/MediaResponse";
-import { WebhookMessage } from "../../types/webhook";
+import { MediaResponse } from "../../../types/MediaResponse";
+import { WebhookMessage } from "../../../types/webhook";
 
 const fileExtRegex = /filename=File.([A-z0-9]+)$/
 
